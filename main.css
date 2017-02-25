@@ -1,0 +1,35 @@
+body {
+	box-sizing: border-box;
+  	font-family: 'Roboto', sans-serif;
+}
+
+header {
+	background-color: #E0EAF1;
+	border-bottom: 1px solid #0e3d69;
+}
+
+h1 {
+	font-weight: bold;
+}
+
+.tube {
+	background-color: #E62117;
+	padding: 5px;
+	border-radius: 6px;
+	margin: 0px;
+	color: #E0EAF1;
+}
+
+input {
+	height: 2em;
+	width: 20em;
+	margin-top: 1em;
+	color: #0e3d69;
+}
+
+button {
+	height: 2em;
+	background-color: crimson;
+	color: white;
+	border-radius: 6px;
+}
