@@ -1,3 +1,8 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
 body {
 	box-sizing: border-box;
   	font-family: 'Roboto', sans-serif;
@@ -6,6 +11,7 @@ body {
 header {
 	background-color: #65b2e8;
 	border-bottom: 1px solid #0e3d69;
+	margin-left: 20px;
 }
 
 h1 {
@@ -27,11 +33,13 @@ input {
 	color: #0e3d69;
 }
 
-button {
+.myButton {
 	height: 2em;
 	background-color: crimson;
 	color: white;
 	border-radius: 6px;
+	width: 5em;
+	margin-top: 1.5em;
 }
 
 #results {
@@ -39,4 +47,32 @@ button {
     margin-top: 10px;
     border-radius: 5px;
     box-shadow: 2px 2px 4px #000;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: solid 1px #fff;
+  box-shadow: inset 1px 1px 2px 0 #707070;
+  transition: box-shadow 0.3s;
+}
+
+.img {
+	margin-left: -24px;
+}
+
+.box {
+	border: 1px solid #000;
+	border-radius: 5px;
+	box-shadow: 2px 2px 8px #000;
+	margin-left: 1em;
+	margin-top: 2em;
+	min-height: 20em;
+	float: left;
+	overflow: hidden;
+
+}
+
+input[type="text"]:focus,
+input[type="text"].focus {
+  box-shadow: inset 1px 1px 2px 0 #c9c9c9;
 }

@@ -11,15 +11,11 @@
 		<link rel="stylesheet" href="float-grid.css">
 		<link rel="stylesheet" href="main.css">
 
-
-		<script type="text/template">
-			<div data-index="{{id}}">
+ 		<script type="text/template" id="thinkfulTemplate">
 				<div class="image"><img src="{{image}}" /></div>
 				<div class="title"><h2>{{title}}</h2></div>
-				<div class="description"><h2>{{description}}</h2></div>				
-			</div>
-
 		</script>
+
 	</head>
 	<body>
 		<header>
@@ -28,20 +24,19 @@
 					<h1>Thinkful <span class="tube">Tube</span></h1>
 				</div>
 				<div class="col-9">
-					<form action="#" class="js-search-form">
-						<label for="js-query"></label>
-						<input type="text" class="js-query">
-						<button type="submit">Search</button>
-					</form>
+					<form id="search-form">
+			            <input id="query" type="text" placeholder="Search me..." />
+			            <input class="myButton" type="submit" value="Search" id="submit" />
+			            </form>
 				</div>
 			</div>
 		</header>
 
 		<main>
 			<div class="row">
-				<div id="results" class="js-search-results col-4">
-
-				</div>
+		        <div id="search-results">
+        		    <ul></ul>
+        		</div>
 			</div>			
 		</main>
 			

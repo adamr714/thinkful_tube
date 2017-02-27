@@ -18,7 +18,7 @@
   max-width: 1000px;
   padding-left: 20px;
   padding-right: 20px;
-  /*margin: 0 auto;*/
+  margin: 0 auto;
 }
 
 /* Clearfix */
@@ -60,7 +60,7 @@
 
   /* 4 columns */
   .col-4 {
-    width: 33.33%;
+    width: 30%;
   }
 
   /* 6 columns */
