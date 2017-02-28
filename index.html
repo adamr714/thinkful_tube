@@ -11,13 +11,9 @@
 		<link rel="stylesheet" href="float-grid.css">
 		<link rel="stylesheet" href="main.css">
 
- 		<script type="text/template" id="thinkfulTemplate">
-				<div class="image"><img src="{{image}}" /></div>
-				<div class="title"><h2>{{title}}</h2></div>
-		</script>
-
 	</head>
 	<body>
+
 		<header>
 			<div class="row">
 				<div class="col-3">
@@ -32,9 +28,24 @@
 			</div>
 		</header>
 
+		<div class="loader">
+			<img src="ajax-loader.gif" height="32px" width="32px" />
+		</div>
+
 		<main>
 			<div class="row">
+				<div id="previous" class="col-4">
+					<a href="javascript:loadPrevious()">Previous Page</a>
+				</div>
+
+				<div id="next" class="col-4">
+					<a href="javascript:loadNext()">Next Page</a>
+				</div>
+			</div> 
+
+			<div class="row">
 		        <div id="search-results">
+
         		    <ul></ul>
         		</div>
 			</div>			
